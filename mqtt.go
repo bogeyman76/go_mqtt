@@ -75,8 +75,6 @@ func MQTT_connect() {
 	tlsConfig := NewTlsConfig(mqtt_creds)
 	opts.SetTLSConfig(tlsConfig)
 	opts.SetClientID(mqtt_creds.ClientID)
-	//opts.SetUsername("emqx")
-	//opts.SetPassword("public")
 	opts.SetDefaultPublishHandler(messagePubHandler)
 	opts.OnConnect = connectHandler
 	opts.OnConnectionLost = connectLostHandler
