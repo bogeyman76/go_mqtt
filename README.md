@@ -26,7 +26,7 @@ The cert files will be generated when you create your AWS "thing".
 
 import the package and then execute the following in your root function: 	
 
-mqtt.MQTT_connect()
+<code>mqtt.MQTT_connect()</code>
 
 <h3>Debugging</h3>
 
