@@ -1,5 +1,5 @@
 
-<h2>Read Me V1</h2>
+<h2>AWS MQTT Package</h2>
 
 This package provides a connection to the AWS IOT ecosystem for applications written in Go Language, allowing you to publish and recieve MQTT messages. Your project is required to have a .env file, located in the root folder of the project, with the following type defined in a JSON string:
 
