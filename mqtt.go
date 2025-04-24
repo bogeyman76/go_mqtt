@@ -11,6 +11,8 @@ import (
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 )
 
+var client mqtt.Client
+
 type MQTT_creds struct {
 	KeyPath  string
 	CertPath string
