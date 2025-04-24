@@ -1,5 +1,5 @@
 
-<h2>Rought draft</h2>
+<h2>Read Me V1</h2>
 
 This script assumes you have a .env file, located in the root folder of the project, with the following type defined in a JSON string:
 
