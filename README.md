@@ -1,5 +1,5 @@
 
-Rought draft:
+<h2>Rought draft</h2>
 
 This script assumes you have a .env file, located in the root folder of the project, with the following type defined in a JSON string:
 
@@ -18,7 +18,13 @@ Make sure to add tls:// to your AWS IOT endpoint!
 
 The cert files will be generated when you create your AWS "thing".  
 
-Debugging:
+<h3>Implementation</h3>
+
+import the package and then execute the following in your root function: 	
+
+mqtt.MQTT_connect()
+
+<h3>Debugging</h3>
 
 You will not be able to connect if you have another device connected using the same credentials.  Please use a unique "thing" to connect.
 
