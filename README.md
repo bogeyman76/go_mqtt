@@ -1,7 +1,7 @@
 
 <h2>Read Me V1</h2>
 
-This script assumes you have a .env file, located in the root folder of the project, with the following type defined in a JSON string:
+This package provides a connection to the AWS IOT ecosystem for applications written in Go Language, allowing you to publish and recieve MQTT messages. Your project is required to have a .env file, located in the root folder of the project, with the following type defined in a JSON string:
 
 <code>
 type MQTT_creds struct { <br>
