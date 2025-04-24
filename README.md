@@ -3,16 +3,20 @@
 
 This script assumes you have a .env file, located in the root folder of the project, with the following type defined in a JSON string:
 
-type MQTT_creds struct {
-	KeyPath  string
-	CertPath string
-	CaPath   string
-	ClientID string
-	Host     string
-	Port     string
+<code>
+type MQTT_creds struct { <br>
+&nbsp; &nbsp;KeyPath&nbsp; &nbsp;&nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;CertPath&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;CaPath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;ClientID&nbsp; &nbsp;&nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;Host&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;Port&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
 }
+</code>
 
-MQTT_CREDS={"KeyPath":"path","CertPath":"path to the cert", ...} etc.
+<br>
+
+<code>MQTT_CREDS={"KeyPath":"path","CertPath":"path to the cert", ...} </code> etc.
 
 Make sure to add tls:// to your AWS IOT endpoint!
 
