@@ -8,9 +8,9 @@ type MQTT_creds struct { <br>
 &nbsp; &nbsp;KeyPath&nbsp; &nbsp;&nbsp;&nbsp;string  <br>
 &nbsp; &nbsp;CertPath&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
 &nbsp; &nbsp;CaPath&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
-&nbsp; &nbsp;ClientID&nbsp; &nbsp;&nbsp;&nbsp;string  <br>
-&nbsp; &nbsp;Host&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
-&nbsp; &nbsp;Port&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;ClientID&nbsp; &nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;Host&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
+&nbsp; &nbsp;Port&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string  <br>
 }
 </code>
 
