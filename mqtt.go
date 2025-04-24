@@ -54,11 +54,19 @@ func NewTlsConfig(mqtt_creds MQTT_creds) *tls.Config {
 	}
 }
 
-func sub(client mqtt.Client) {
-	topic := "topic/test"
+func MQTTSub(client mqtt.Client, topic string) {
 	token := client.Subscribe(topic, 1, nil)
 	token.Wait()
 	fmt.Printf("Subscribed to topic: %s", topic)
+}
+
+func MQTTPub(client mqtt.Client, topic string, msg any) {
+	tkn := client.Publish(topic, 1, false, msg)
+	tkn.Wait()
+}
+
+func GetClient() *mqtt.Client {  // returns the client address so you can apply it to MQTTPub in other packages
+	return &client
 }
 
 func MQTT_connect() {
@@ -84,5 +92,5 @@ func MQTT_connect() {
 	if token := client.Connect(); token.Wait() && token.Error() != nil {
 		panic(token.Error())
 	}
-	sub(client)
+	MQTTSub(client, `testing`)  // remove this if you want to subscribe in other packages. For example only.
 }
